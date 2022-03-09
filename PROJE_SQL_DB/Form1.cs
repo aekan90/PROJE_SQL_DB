@@ -16,5 +16,10 @@ namespace PROJE_SQL_DB
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

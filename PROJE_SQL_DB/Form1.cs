@@ -21,5 +21,12 @@ namespace PROJE_SQL_DB
         {
 
         }
+
+
+        private void BtnKategori_Click(object sender, EventArgs e)
+        {
+            FrmUrunler fr = new FrmUrunler();
+            fr.Show();
+        }
     }
 }

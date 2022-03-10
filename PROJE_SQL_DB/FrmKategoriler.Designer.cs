@@ -35,8 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.BtnKaydet = new System.Windows.Forms.Button();
             this.BtnListele = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnSil = new System.Windows.Forms.Button();
+            this.BtnGuncelle = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -58,6 +58,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(649, 335);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label1
             // 
@@ -125,31 +126,33 @@
             this.BtnListele.UseVisualStyleBackColor = true;
             this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
-            // button3
+            // BtnSil
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(437, 152);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(193, 50);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Sil";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnSil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnSil.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnSil.Location = new System.Drawing.Point(437, 152);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(193, 50);
+            this.BtnSil.TabIndex = 11;
+            this.BtnSil.Text = "Sil";
+            this.BtnSil.UseVisualStyleBackColor = true;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
-            // button4
+            // BtnGuncelle
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(437, 217);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(193, 50);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Güncelle";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGuncelle.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnGuncelle.Location = new System.Drawing.Point(437, 217);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(193, 50);
+            this.BtnGuncelle.TabIndex = 9;
+            this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // pictureBox3
             // 
@@ -202,9 +205,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(649, 627);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BtnSil);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.BtnListele);
             this.Controls.Add(this.pictureBox1);
@@ -216,6 +219,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmUrunler";
             this.Text = "Kategoriler";
+            this.Load += new System.EventHandler(this.FrmUrunler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -238,8 +242,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button BtnListele;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnSil;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnGuncelle;
     }
 }

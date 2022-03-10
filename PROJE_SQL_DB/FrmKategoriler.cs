@@ -27,6 +27,16 @@ namespace PROJE_SQL_DB
             da.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut2 = new SqlCommand("INSERT INTO TBLKATEGORI(KATEGORIAD) VALUES (@p1)",baglanti);
+            komut2.Parameters.AddWithValue("p1", TxtKategoriAd.Text);
+            komut2.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Kategori Kaydetme İşlemi Başarıyla Gerçekleşti");
+        }
     }
 }
 

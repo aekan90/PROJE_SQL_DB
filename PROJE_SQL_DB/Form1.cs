@@ -28,5 +28,12 @@ namespace PROJE_SQL_DB
             FrmUrunler fr = new FrmUrunler();
             fr.Show();
         }
+
+
+        private void BtnMusteri_Click(object sender, EventArgs e)
+        {
+            FrmMusteri fr = new FrmMusteri();
+            fr.Show();
+        }
     }
 }

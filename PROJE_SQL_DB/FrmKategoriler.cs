@@ -19,13 +19,19 @@ namespace PROJE_SQL_DB
         }
 
         SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-OA1OLIM;Initial Catalog=SatisVT;Integrated Security=True");
-        private void BtnListele_Click(object sender, EventArgs e)
+
+        void listele()
         {
             SqlCommand komut = new SqlCommand("Select * From TBLKATEGORI", baglanti);
             SqlDataAdapter da = new SqlDataAdapter(komut);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
+        }
+
+        private void BtnListele_Click(object sender, EventArgs e)
+        {
+            listele();
         }
 
         private void BtnKaydet_Click(object sender, EventArgs e)
@@ -39,11 +45,7 @@ namespace PROJE_SQL_DB
             MessageBox.Show("Kategori Kaydetme İşlemi Başarıyla Gerçekleşti");
 
             // güncel tablo verisini LİSTELEME yapalım, datagridimiz dinamik görünsün
-            SqlCommand komut = new SqlCommand("Select * From TBLKATEGORI", baglanti);
-            SqlDataAdapter da = new SqlDataAdapter(komut);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
+            listele();
             // güncel tablo verisi datagride basıldı
         }
 
@@ -64,11 +66,7 @@ namespace PROJE_SQL_DB
             // silme işlemi tamamlandı
 
             // güncel tablo verisini LİSTELEME yapalım
-            SqlCommand komut = new SqlCommand("Select * From TBLKATEGORI", baglanti);
-            SqlDataAdapter da = new SqlDataAdapter(komut);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
+            listele();
             // güncel tablo verisi datagride basıldı
 
 
@@ -88,11 +86,7 @@ namespace PROJE_SQL_DB
             // UPDATE işlemi tamamlandı
 
             // güncel tablo verisini LİSTELEME yapalım
-            SqlCommand komut2 = new SqlCommand("Select * From TBLKATEGORI", baglanti);
-            SqlDataAdapter da = new SqlDataAdapter(komut2);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
+            listele();
             // güncel tablo verisi datagride basıldı
 
             baglanti.Close();
@@ -100,11 +94,7 @@ namespace PROJE_SQL_DB
 
         private void FrmUrunler_Load(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Select * From TBLKATEGORI", baglanti);
-            SqlDataAdapter da = new SqlDataAdapter(komut);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
+            listele();
         }
     }
 }

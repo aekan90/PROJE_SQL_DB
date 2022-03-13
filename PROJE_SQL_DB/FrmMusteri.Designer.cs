@@ -28,44 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.BtnSil = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.BtnGuncelle = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.BtnListele = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnKaydet = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.TxtMusteriAd = new System.Windows.Forms.TextBox();
+            this.TxtAd = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.TxtMusteriId = new System.Windows.Forms.TextBox();
+            this.TxtId = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TxtMusteriBakiye = new System.Windows.Forms.TextBox();
+            this.CmbSehir = new System.Windows.Forms.ComboBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.BtnaAra = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.TxtBakiye = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.TxtMusteriSoyad = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TxtMusteriŞehir = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.TxtSoyad = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox3.Image = global::PROJE_SQL_DB.Properties.Resources.icons8_Delete_80px;
-            this.pictureBox3.Location = new System.Drawing.Point(61, 354);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(62, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 25;
-            this.pictureBox3.TabStop = false;
             // 
             // BtnSil
             // 
@@ -73,23 +65,13 @@
             this.BtnSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnSil.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnSil.Location = new System.Drawing.Point(129, 354);
+            this.BtnSil.Location = new System.Drawing.Point(129, 381);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(193, 50);
             this.BtnSil.TabIndex = 24;
             this.BtnSil.Text = "Sil";
             this.BtnSil.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox4.Image = global::PROJE_SQL_DB.Properties.Resources.icons8_update_50px;
-            this.pictureBox4.Location = new System.Drawing.Point(61, 419);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(62, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnGuncelle
             // 
@@ -97,23 +79,13 @@
             this.BtnGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnGuncelle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnGuncelle.Location = new System.Drawing.Point(129, 419);
+            this.BtnGuncelle.Location = new System.Drawing.Point(129, 446);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(193, 50);
             this.BtnGuncelle.TabIndex = 22;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox2.Image = global::PROJE_SQL_DB.Properties.Resources.icons8_list_24px;
-            this.pictureBox2.Location = new System.Drawing.Point(61, 224);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(62, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnListele
             // 
@@ -121,7 +93,7 @@
             this.BtnListele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnListele.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnListele.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnListele.Location = new System.Drawing.Point(129, 224);
+            this.BtnListele.Location = new System.Drawing.Point(129, 251);
             this.BtnListele.Name = "BtnListele";
             this.BtnListele.Size = new System.Drawing.Size(193, 50);
             this.BtnListele.TabIndex = 20;
@@ -129,29 +101,19 @@
             this.BtnListele.UseVisualStyleBackColor = true;
             this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox1.Image = global::PROJE_SQL_DB.Properties.Resources.icons8_save_64px;
-            this.pictureBox1.Location = new System.Drawing.Point(61, 289);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(62, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
             // BtnKaydet
             // 
             this.BtnKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKaydet.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnKaydet.Location = new System.Drawing.Point(129, 289);
+            this.BtnKaydet.Location = new System.Drawing.Point(129, 316);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(193, 50);
             this.BtnKaydet.TabIndex = 18;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // dataGridView1
             // 
@@ -163,14 +125,15 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(629, 575);
             this.dataGridView1.TabIndex = 13;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // TxtMusteriAd
+            // TxtAd
             // 
-            this.TxtMusteriAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtMusteriAd.Location = new System.Drawing.Point(174, 65);
-            this.TxtMusteriAd.Name = "TxtMusteriAd";
-            this.TxtMusteriAd.Size = new System.Drawing.Size(187, 28);
-            this.TxtMusteriAd.TabIndex = 29;
+            this.TxtAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtAd.Location = new System.Drawing.Point(174, 65);
+            this.TxtAd.Name = "TxtAd";
+            this.TxtAd.Size = new System.Drawing.Size(187, 28);
+            this.TxtAd.TabIndex = 29;
             // 
             // label3
             // 
@@ -183,13 +146,13 @@
             this.label3.TabIndex = 28;
             this.label3.Text = "Musteri AD : ";
             // 
-            // TxtMusteriId
+            // TxtId
             // 
-            this.TxtMusteriId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtMusteriId.Location = new System.Drawing.Point(174, 32);
-            this.TxtMusteriId.Name = "TxtMusteriId";
-            this.TxtMusteriId.Size = new System.Drawing.Size(187, 28);
-            this.TxtMusteriId.TabIndex = 27;
+            this.TxtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtId.Location = new System.Drawing.Point(174, 32);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.Size = new System.Drawing.Size(187, 28);
+            this.TxtId.TabIndex = 27;
             // 
             // label4
             // 
@@ -204,24 +167,26 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.CmbSehir);
+            this.groupBox1.Controls.Add(this.pictureBox5);
+            this.groupBox1.Controls.Add(this.BtnaAra);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Controls.Add(this.TxtMusteriŞehir);
             this.groupBox1.Controls.Add(this.BtnSil);
-            this.groupBox1.Controls.Add(this.TxtMusteriBakiye);
+            this.groupBox1.Controls.Add(this.TxtBakiye);
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.BtnGuncelle);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.TxtMusteriSoyad);
+            this.groupBox1.Controls.Add(this.TxtSoyad);
             this.groupBox1.Controls.Add(this.BtnListele);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.TxtMusteriAd);
+            this.groupBox1.Controls.Add(this.TxtAd);
             this.groupBox1.Controls.Add(this.BtnKaydet);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.TxtMusteriId);
+            this.groupBox1.Controls.Add(this.TxtId);
             this.groupBox1.Location = new System.Drawing.Point(639, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(379, 585);
@@ -229,13 +194,79 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // TxtMusteriBakiye
+            // CmbSehir
             // 
-            this.TxtMusteriBakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtMusteriBakiye.Location = new System.Drawing.Point(174, 132);
-            this.TxtMusteriBakiye.Name = "TxtMusteriBakiye";
-            this.TxtMusteriBakiye.Size = new System.Drawing.Size(187, 28);
-            this.TxtMusteriBakiye.TabIndex = 33;
+            this.CmbSehir.FormattingEnabled = true;
+            this.CmbSehir.Location = new System.Drawing.Point(174, 166);
+            this.CmbSehir.Name = "CmbSehir";
+            this.CmbSehir.Size = new System.Drawing.Size(187, 33);
+            this.CmbSehir.TabIndex = 38;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox5.Image = global::PROJE_SQL_DB.Properties.Resources.icons8_search_32px;
+            this.pictureBox5.Location = new System.Drawing.Point(61, 502);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(62, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 37;
+            this.pictureBox5.TabStop = false;
+            // 
+            // BtnaAra
+            // 
+            this.BtnaAra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnaAra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnaAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnaAra.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnaAra.Location = new System.Drawing.Point(129, 502);
+            this.BtnaAra.Name = "BtnaAra";
+            this.BtnaAra.Size = new System.Drawing.Size(193, 50);
+            this.BtnaAra.TabIndex = 36;
+            this.BtnaAra.Text = "Ara";
+            this.BtnaAra.UseVisualStyleBackColor = true;
+            this.BtnaAra.Click += new System.EventHandler(this.BtnaAra_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(18, 166);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(156, 25);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Musteri ŞEHİR : ";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox3.Image = global::PROJE_SQL_DB.Properties.Resources.icons8_Delete_80px;
+            this.pictureBox3.Location = new System.Drawing.Point(61, 381);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(62, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 25;
+            this.pictureBox3.TabStop = false;
+            // 
+            // TxtBakiye
+            // 
+            this.TxtBakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtBakiye.Location = new System.Drawing.Point(174, 132);
+            this.TxtBakiye.Name = "TxtBakiye";
+            this.TxtBakiye.Size = new System.Drawing.Size(187, 28);
+            this.TxtBakiye.TabIndex = 33;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox4.Image = global::PROJE_SQL_DB.Properties.Resources.icons8_update_50px;
+            this.pictureBox4.Location = new System.Drawing.Point(61, 446);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(62, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 23;
+            this.pictureBox4.TabStop = false;
             // 
             // label5
             // 
@@ -259,32 +290,35 @@
             this.label6.TabIndex = 32;
             this.label6.Text = "Musteri BAKİYE : ";
             // 
-            // TxtMusteriSoyad
+            // pictureBox2
             // 
-            this.TxtMusteriSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtMusteriSoyad.Location = new System.Drawing.Point(174, 99);
-            this.TxtMusteriSoyad.Name = "TxtMusteriSoyad";
-            this.TxtMusteriSoyad.Size = new System.Drawing.Size(187, 28);
-            this.TxtMusteriSoyad.TabIndex = 31;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox2.Image = global::PROJE_SQL_DB.Properties.Resources.icons8_list_24px;
+            this.pictureBox2.Location = new System.Drawing.Point(61, 251);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(62, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
             // 
-            // label7
+            // TxtSoyad
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(18, 166);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(156, 25);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "Musteri ŞEHİR : ";
+            this.TxtSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtSoyad.Location = new System.Drawing.Point(174, 99);
+            this.TxtSoyad.Name = "TxtSoyad";
+            this.TxtSoyad.Size = new System.Drawing.Size(187, 28);
+            this.TxtSoyad.TabIndex = 31;
             // 
-            // TxtMusteriŞehir
+            // pictureBox1
             // 
-            this.TxtMusteriŞehir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtMusteriŞehir.Location = new System.Drawing.Point(174, 166);
-            this.TxtMusteriŞehir.Name = "TxtMusteriŞehir";
-            this.TxtMusteriŞehir.Size = new System.Drawing.Size(187, 28);
-            this.TxtMusteriŞehir.TabIndex = 35;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox1.Image = global::PROJE_SQL_DB.Properties.Resources.icons8_save_64px;
+            this.pictureBox1.Location = new System.Drawing.Point(61, 316);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(62, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmMusteri
             // 
@@ -295,16 +329,20 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmMusteri";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMusteri";
+            this.Load += new System.EventHandler(this.FrmMusteri_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -320,16 +358,18 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnKaydet;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox TxtMusteriAd;
+        private System.Windows.Forms.TextBox TxtAd;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TxtMusteriId;
+        private System.Windows.Forms.TextBox TxtId;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox TxtMusteriŞehir;
-        private System.Windows.Forms.TextBox TxtMusteriBakiye;
+        private System.Windows.Forms.TextBox TxtBakiye;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox TxtMusteriSoyad;
+        private System.Windows.Forms.TextBox TxtSoyad;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button BtnaAra;
+        private System.Windows.Forms.ComboBox CmbSehir;
     }
 }
